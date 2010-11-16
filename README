@@ -9,7 +9,7 @@ Installation
 -------------------------------------------------------------------------------
 
 Just copy everything to your home directory. 
-There is only one plugin which require installation called Command-t for 
+There is only one plugin which require installation (called Command-t) for 
 install it please read ./vim/doc/command-t.txt.
 
 

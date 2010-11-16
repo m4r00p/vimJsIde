@@ -1,3 +1,21 @@
-Vi Js IDE
+Vim Js IDE
 
-It's simple set of useful plugins for Vim. Which makes Vim really powerful Javascript IDE.
+It's simple set of useful plugins for Vim. Which makes Vim really powerful 
+Javascript IDE.
+
+
+
+Installation
+-------------------------------------------------------------------------------
+
+Just copy everything to your home directory. 
+There is only one plugin which require installation called Command-t for 
+install it please read ./vim/doc/command-t.txt.
+
+
+
+Afterword
+-------------------------------------------------------------------------------
+
+Feel free to ask question and report issues.
+

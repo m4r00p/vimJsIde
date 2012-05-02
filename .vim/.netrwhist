@@ -1,2 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/usr/local/var/mysql'
+let g:netrw_dirhist_2='/Users/marekapawlowski/Workspace/oldstuff/js[COOL STUFF]/inheritance'
+let g:netrw_dirhist_3='/Users/marekapawlowski/Workspace/oldstuff/computer-science-in-javascript'
+let g:netrw_dirhist_4='/Users/marekapawlowski/Workspace/DevelopersPeak/scrumboard'
+let g:netrw_dirhist_5='/Users/marekapawlowski/Workspace/iCircular/jean-grey'

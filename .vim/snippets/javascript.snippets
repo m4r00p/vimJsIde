@@ -1,4 +1,11 @@
 # Prototype
+
+snippet :
+
+	${1}: function (${2}) {
+		${4}
+	}${3:,}
+
 snippet p
 	${1}.prototype.${2} = ${3};
 # Function
@@ -9,7 +16,7 @@ snippet f
 snippet a
 	alert(${1});${2}
 snippet c
-	console.log(${1});${2}
+	console.log(${1}, ${1});${2}
 snippet r
 	return${1};
 snippet b
@@ -30,7 +37,8 @@ snippet if
 snippet ife
 	if (${1}) {
 		${2}
-	} else {
+	}
+	else {
 		${3}
 	}
 # switch

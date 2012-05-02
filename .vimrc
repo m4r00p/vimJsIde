@@ -3,6 +3,13 @@ set nocompatible
 set number
 set numberwidth=5
 
+"set autochdir
+
+"set fullscreen
+
+set transparency=5
+set anti
+
 set nowrap
 
 if has("gui_running")
@@ -10,7 +17,7 @@ if has("gui_running")
 endif
 
 :colorscheme desert
-set guifont=Monaco:h12
+set guifont=Inconsolata:h14
 
 syntax enable
 set autoread
@@ -23,9 +30,9 @@ filetype indent on
 "set autoindent
 "set smartindent
 "set cindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 
 " Set to auto read when a file is changed from the outside
@@ -50,7 +57,7 @@ nnoremap <C-p> :cprev<CR>
 nnoremap <C-c> :cclose<CR>
 nnoremap <C-j> /<C-R><C-W><CR>
 
-nmap ,tt :tabnew<CR>
+nmap ,tt :tabnew .<CR>
 nmap ,tp :tabprev<CR>
 nmap <C-left> :tabprev<CR>
 nmap ,tn :tabnext<CR>
@@ -58,6 +65,11 @@ nmap <C-right> :tabnext<CR>
 nmap ,tc :tabclose<CR>
 nmap ,tl :tablast<CR>
 nmap ,tf :tabfirst<CR>  
+
+command! Rhino !java -jar /usr/local/lib/rhino/js.jar %
+nmap ,r :Rhino<CR>
+command! V8 !v8 %
+nmap ,v :V8<CR>
 
 "autocmd BufWriteCmd *.js :call CompileJS()
 "function! CompileJS()
@@ -70,3 +82,9 @@ nmap ,tf :tabfirst<CR>
         "execute "! java -jar " . cpa . " --js=" . fn . " --js_output_file=" . pn . "/" . fnm . ".min.js"
     "endif
 "endfunction
+
+"ruby autocomplet
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global = 1
+let g:rubycomplete_rails = 1
+
